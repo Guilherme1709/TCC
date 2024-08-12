@@ -1,0 +1,45 @@
+<<<<<<< HEAD:Site TCC/templates/index.html
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postagens</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Lista de Postagens AAAAAAAAAAAAAAAAAA</h1>
+    <ul>
+        {% for postagem in postagens %}
+        <li>
+            <h2>{{ postagem.titulo }}</h2>
+            <p>{{ postagem.conteudo }}</p>
+            <p>Local Identificado: {{ postagem.local_identificado }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postagens</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Lista de Postagens</h1>
+    <ul>
+        {% for postagem in postagens %}
+        <li>
+            <h2>{{ postagem.titulo }}</h2>
+            <p>{{ postagem.conteudo }}</p>
+            <p>Local Identificado: {{ postagem.local_identificado }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+>>>>>>> e6732ac747d4a18d7f48feb1758a6da9516063dc:templates/index.html
