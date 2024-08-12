@@ -4,7 +4,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    # Exemplo de dados para teste
     postagens = [
         {
             "id": 1,
